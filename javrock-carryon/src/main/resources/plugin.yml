@@ -1,0 +1,15 @@
+name: JavrockCarryOn
+version: 1.0.0
+main: id.javrock.carryon.JavrockCarryOnPlugin
+api-version: '1.21'
+author: Javrock SMP
+description: Mengangkat blok 3D (BlockDisplay) dan mob secara langsung tanpa menjadi item/spawn egg.
+commands:
+  jcarry:
+    description: Kelola plugin JavrockCarryOn
+    aliases: [javrockcarry, carryreload]
+    permission: javrockcarryon.admin
+permissions:
+  javrockcarryon.admin:
+    description: Akses reload konfigurasi JavrockCarryOn
+    default: op

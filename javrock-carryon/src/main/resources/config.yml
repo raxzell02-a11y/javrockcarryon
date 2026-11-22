@@ -1,0 +1,91 @@
+# Konfigurasi JavrockCarryOn untuk Javrock SMP (Paper 1.21.11)
+
+settings:
+  # Jarak objek 3D di depan badan pemain (dalam blok)
+  carry-distance: 1.25
+
+  # Ketinggian relatif objek 3D terhadap kaki pemain
+  carry-height-offset: 0.75
+
+  # Skala visual BlockDisplay (0.75 agar proporsional di depan dada pemain)
+  block-display-scale: 0.75
+
+  # Simpan dan kembalikan isi inventory blok kontainer (chest, barrel, furnace, shulker, dll.)
+  preserve-container-contents: true
+
+blocks:
+  # Jika true, semua blok normal boleh diangkat kecuali ada di blacklist
+  allow-all: false
+
+  whitelist:
+    - CHEST
+    - TRAPPED_CHEST
+    - BARREL
+    - FURNACE
+    - BLAST_FURNACE
+    - SMOKER
+    - DROPPER
+    - DISPENSER
+    - HOPPER
+    - BREWING_STAND
+    - CRAFTING_TABLE
+    - JUKEBOX
+    - LECTERN
+    - CHISELED_BOOKSHELF
+    - SHULKER_BOX
+    - WHITE_SHULKER_BOX
+    - ORANGE_SHULKER_BOX
+    - MAGENTA_SHULKER_BOX
+    - LIGHT_BLUE_SHULKER_BOX
+    - YELLOW_SHULKER_BOX
+    - LIME_SHULKER_BOX
+    - PINK_SHULKER_BOX
+    - GRAY_SHULKER_BOX
+    - LIGHT_GRAY_SHULKER_BOX
+    - CYAN_SHULKER_BOX
+    - PURPLE_SHULKER_BOX
+    - BLUE_SHULKER_BOX
+    - BROWN_SHULKER_BOX
+    - GREEN_SHULKER_BOX
+    - RED_SHULKER_BOX
+    - BLACK_SHULKER_BOX
+    - ANVIL
+    - CHIPPED_ANVIL
+    - DAMAGED_ANVIL
+
+  blacklist:
+    - BEDROCK
+    - BARRIER
+    - COMMAND_BLOCK
+    - CHAIN_COMMAND_BLOCK
+    - REPEATING_COMMAND_BLOCK
+    - END_PORTAL_FRAME
+    - END_PORTAL
+    - NETHER_PORTAL
+    - SPAWNER
+    - STRUCTURE_BLOCK
+    - JIGSAW
+
+entities:
+  enabled: true
+  blacklist:
+    - PLAYER
+    - ENDER_DRAGON
+    - ELDER_GUARDIAN
+    - WARDEN
+    - WITHER
+    - GIANT
+    - BLOCK_DISPLAY
+    - ITEM_DISPLAY
+    - TEXT_DISPLAY
+    - INTERACTION
+
+messages:
+  prefix: '&9&lᴊᴀᴠʀᴏᴄᴋ &8» '
+  picked-block: '&9&lᴊᴀᴠʀᴏᴄᴋ &8» &7ᴍᴇɴɢᴀɴɢᴋᴀᴛ ʙʟᴏᴋ &3%item% &7(ꜱɴᴇᴀᴋ + ᴋʟɪᴋ ᴋᴀɴᴀɴ ᴜɴᴛᴜᴋ ᴍᴇɴᴀʀᴜʜ)'
+  picked-entity: '&9&lᴊᴀᴠʀᴏᴄᴋ &8» &7ᴍᴇɴɢᴀɴɢᴋᴀᴛ &3%entity% &7(ꜱɴᴇᴀᴋ + ᴋʟɪᴋ ᴋᴀɴᴀɴ ᴜɴᴛᴜᴋ ᴍᴇʟᴇᴘᴀꜱ)'
+  placed-block: '&9&lᴊᴀᴠʀᴏᴄᴋ &8» &7ᴍᴇɴᴀʀᴜʜ ʙʟᴏᴋ &3%item%'
+  released-entity: '&9&lᴊᴀᴠʀᴏᴄᴋ &8» &7ᴍᴇʟᴇᴘᴀꜱ &3%entity%'
+  cannot-place: '&cᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴇɴᴀʀᴜʜ ʙʟᴏᴋ ᴅɪ ꜱɪɴɪ!'
+  cannot-carry: '&cᴏʙᴊᴇᴋ ɪɴɪ ᴛɪᴅᴀᴋ ᴅɪɪᴢɪɴᴋᴀɴ ᴜɴᴛᴜᴋ ᴅɪᴀɴɢᴋᴀᴛ.'
+  reloaded: '&bᴋᴏɴꜰɪɢᴜʀᴀꜱɪ ᴊᴀᴠʀᴏᴄᴋᴄᴀʀʀʏᴏɴ ʙᴇʀʜᴀꜱɪʟ ᴅɪᴍᴜᴀᴛ ᴜʟᴀɴɢ.'
